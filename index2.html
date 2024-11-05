@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header Section -->
+  <header class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">TYS BLOG</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#featured" class="hover:text-gray-200">Featured</a></li>
+          <li><a href="#categories" class="hover:text-gray-200">Categories</a></li>
+          <li><a href="#recent" class="hover:text-gray-200">Recent Posts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Featured Posts Section -->
+  <section id="featured" class="p-10 bg-white">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Featured Posts</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-gray-100 rounded-lg shadow-lg p-4">
+        <img src="Food Recipe.jpg" alt="Food recipe" class="rounded-t-lg mb-4">
+        <h3 class="text-xl font-semibold">Stanton Food and Recipes</h3>
+        <p class="text-gray-600">Taste of Stanton
+          Discover Stanton's culinary delights, featuring:
+          <br>
+          <bold>Local Specialties:</bold>
+          Hearty burgers
+          Farmhouse-style comfort food
+          Fresh seafood
+          <br>
+          <bold>Homegrown Ingredients:</bold>
+          Seasonal produce
+          Artisanal cheeses
+          Local craft brews
+          <br>
+          <bold>Try at Home:</bold>
+          Stanton-style BBQ ribs
+          Riverfront chowder
+          Farmhouse apple pie
+          <br>
+          Stanton's cuisine showcases warm hospitality and rich flavors. Explore local specialties, homegrown ingredients, and try Stanton-inspired recipes..</p>
+      </div>
+      <div class="bg-gray-100 rounded-lg shadow-lg p-4">
+        <img src="fishing.jpg" alt="Fishing on the High Sea" class="rounded-t-lg mb-4">
+        <h3 class="text-xl font-semibold">Fishing on the High Sea</h3>
+        <p class="text-gray-600"> An Unforgettable Adventure
+          Deep-sea fishing offers an exhilarating experience, combining thrill, nature, and camaraderie. The open ocean's vast waters are home to large and elusive fish species, making every catch a challenge.
+          <br> Experience the beauty of the open ocean and stunning sunsets
+          Catch a variety of fish species, from game fish to commercial catches
+          <br> Ensure a safe and successful trip with a sturdy vessel, experienced crew, and proper safety gear
+          Fishing on the high sea is an adventure that offers excitement, exploration, and connection with nature. With proper preparation and safety measures, anglers can reel in unforgettable memories.</p>
+      </div>
+      <div class="bg-gray-100 rounded-lg shadow-lg p-4">
+        <img src="tea-500w.jpg" alt="A cup of Tea" class="rounded-t-lg mb-4">
+        <h3 class="text-xl font-semibold">Unlocking the Power of Tea</h3>
+        <p class="text-gray-600">
+          Discover the numerous benefits of tea, from physical health boosts to mental wellbeing enhancements.
+          Key Benefits:
+          Fights cancer, heart disease, and aging with antioxidants
+          Supports immune function and heart health
+          Reduces stress, improves focus, and enhances mood
+          Aids in weight loss, skin health, and digestive wellbeing
+          Tea offers a holistic approach to wellness, providing physical and mental health benefits. Incorporating tea into your daily routine can significantly improve overall quality of life.
+          Tea boosts physical and mental wellbeing with antioxidants, stress relief, and immune support, making it a simple yet powerful addition to a healthy lifestyle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Section -->
+  <section id="categories" class="p-10 bg-gray-100">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Categories</h2>
+    <div class="flex flex-wrap justify-center space-x-4 space-y-4">
+      <span class="bg-blue-200 text-blue-800 px-4 py-2 rounded-full">Technology</span>
+      <span class="bg-green-200 text-green-800 px-4 py-2 rounded-full">Health</span>
+      <span class="bg-purple-200 text-purple-800 px-4 py-2 rounded-full">Lifestyle</span>
+      <span class="bg-yellow-200 text-yellow-800 px-4 py-2 rounded-full">Travel</span>
+      <span class="bg-red-200 text-red-800 px-4 py-2 rounded-full">Education</span>  
+    </div>
+  </section>
+
+  <!-- Recent Posts Section -->
+  <section id="recent" class="p-10 bg-white">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Recent Posts</h2>
+    <div class="space-y-4">
+      <div class="flex justify-between items-center border-b pb-4">
+        <h3 class="text-xl font-semibold">The Traveling Life</h3>
+        <p class="text-gray-500">November 04, 2024</p>
+      </div>
+      <div class="flex justify-between items-center border-b pb-4">
+        <h3 class="text-xl font-semibold">The Happiness Project</h3>
+        <p class="text-gray-500">November 03, 2024</p>
+      </div>
+      <div class="flex justify-between items-center border-b pb-4">
+        <h3 class="text-xl font-semibold">Innovation Insights</h3>
+        <p class="text-gray-500">November 02, 2024</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription Form -->
+  <section id="newsletter" class="p-10 bg-blue-600 text-white">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Subscribe to Our Newsletter</h2>
+    <form class="max-w-lg mx-auto flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+      <input type="email" placeholder="Your email address" class="w-full p-2 rounded text-gray-800">
+      <button class="bg-blue-800 p-2 rounded hover:bg-blue-700">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-4 bg-gray-800 text-white">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <p class="text-center">&copy; 2024 TYS BLOG. All Rights Reserved.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-gray-400">LinkedIn</a>
+        <a href="#" class="hover:text-gray-400">Twitter</a>
+        <a href="#" class="hover:text-gray-400">Facebook</a>
+        <a href="#" class="hover:text-gray-400">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
